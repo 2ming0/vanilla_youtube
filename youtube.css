@@ -1,0 +1,174 @@
+ #header_main_search {
+    width: 70%;
+    height: 30px;
+} 
+
+#header_main_magnifier{
+    width: 50px;
+    height: 35px;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+#header_main_mic {
+    width: 40px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    /* 메인축 방향 정렬, 메인축 방향으로 아이템 정렬
+    space-between : 아이템들 사이에 균일한 간격 만들어줌 */
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 4;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+#header_left {
+    display: flex;
+}
+
+#header_left_menu {
+    width: 75px;
+    height: 100%;
+    margin-top: 0px;
+}
+
+#header_left_logo {
+    width: 120px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+#header_main {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-top: 10px;
+}
+
+
+
+#header_right {
+    margin-right: 5px;
+}
+
+.header_right_menu {
+    width: 40px;
+    height: 40px;
+}
+
+
+#side_bar {
+    position: fixed;
+    width: 75px;
+    height: 1000px;
+    background-color: white;
+    top: 60px;
+    left: 0px;
+    z-index: 3; 
+    /* 우선순위(?) 맨위에 보이게 하는것
+    숫자가 높을 수록 위로감 */
+}
+
+.side_bar_menu {
+    width: 75px;
+    height: 7%;
+}
+
+#player {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 80px;
+    padding-left: 5px;
+    z-index: 0;
+}
+
+.player_video_photo {
+    width: 100%;
+	height: auto;
+}
+
+.player_video_info_profile {
+    width: 40px;
+    height: 40px;
+}
+
+.player_video {
+    display: inline-block;
+    margin: 10px;
+}
+
+
+
+.player_video_info_title {
+    display: inline-block;
+    text-align: top;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.player_video_info {
+    display: flex;
+    /* inline-flex는 flex를 가로 정렬한 것
+    flex를 주고 flex-direction row를 주면 똑같음,,
+    flex 주고 direction column을 하면 세로정렬 */
+}
+
+.player_video_youtuber {
+    margin-left: 50px;
+    font-size: 13px;
+    color: gray;
+}
+
+.player_video_view {
+    margin-left: 50px;
+    font-size: 13px;
+    color: gray;
+}
+
+.player_video_date {
+    font-size: 13px;
+    color: gray;
+}
+
+@media (max-width: 650px) {
+    #header_main {
+        display: none;
+    }
+}
+
+
+@media ( max-width: 2000px) {
+    .player_video {
+        width: 23%;
+    }
+}
+
+@media ( max-width: 1400px) {
+    .player_video {
+        width: 31%;
+    }
+}
+
+@media ( max-width: 1000px) {
+    .player_video {
+        width: 46%;
+    }
+}
+
+@media ( max-width: 620px) {
+    .player_video {
+        width: 79%;
+    }
+}
+
+/* 범위기준으로 나누기 */
